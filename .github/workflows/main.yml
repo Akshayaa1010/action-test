@@ -1,0 +1,15 @@
+name: Test Action
+
+on:
+  push:
+    branches:
+      - main  # Make sure this matches your branch
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: 24f2008294@ds.study.iitm.ac.in
+        run: echo "Hello, world!"
